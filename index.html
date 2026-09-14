@@ -1,0 +1,645 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Nagori — Japanese Contemporary Dining, São Paulo</title>
+<meta name="description" content="Balcão de doze lugares em São Paulo. Técnica japonesa, pescados e cítricos brasileiros, uma sequência de omakase por noite. Reservas para o menu de doze tempos.">
+<meta name="theme-color" content="#090909">
+<meta name="color-scheme" content="dark">
+<link rel="canonical" href="https://nagori.com.br/">
+
+<meta property="og:type" content="website">
+<meta property="og:locale" content="pt_BR">
+<meta property="og:site_name" content="Nagori">
+<meta property="og:title" content="Nagori — Japanese Contemporary Dining, São Paulo">
+<meta property="og:description" content="Técnica japonesa, ingredientes brasileiros. Omakase de doze tempos em um balcão de doze lugares.">
+<meta property="og:image" content="assets/img/hero-1400.webp">
+<meta name="twitter:card" content="summary_large_image">
+
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='3' fill='%238C1D18'/%3E%3Ctext x='16' y='23' font-family='serif' font-size='20' fill='%23F1E9DC' text-anchor='middle'%3E名%3C/text%3E%3C/svg%3E">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="preload" as="image" href="assets/img/hero-2400.webp" media="(min-width: 900px)">
+<link href="https://fonts.googleapis.com/css2?family=Jost:wght@200;300;400;500&family=Shippori+Mincho+B1:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/css/nagori.css">
+
+<!-- reveals start hidden and are released by the observer; with no JS, release them up front -->
+<noscript><style>
+  [data-reveal],[data-reveal-img],[data-stamp]{ opacity:1 !important; transform:none !important; clip-path:none !important; }
+  [data-reveal-img] img{ transform:none !important; clip-path:none !important; scale:1 !important; }
+  .hero__title .line span{ transform:none !important; }
+</style></noscript>
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Restaurant",
+  "name": "Nagori",
+  "description": "Balcão japonês contemporâneo em São Paulo. Omakase de doze tempos com técnica japonesa e ingredientes brasileiros.",
+  "servesCuisine": ["Japonesa", "Omakase", "Contemporânea"],
+  "priceRange": "$$$$",
+  "address": {
+    "@type": "PostalAddress",
+    "streetAddress": "R. Padre João Manuel, 900",
+    "addressLocality": "São Paulo",
+    "addressRegion": "SP",
+    "addressCountry": "BR"
+  },
+  "openingHoursSpecification": [
+    { "@type": "OpeningHoursSpecification", "dayOfWeek": ["Tuesday","Wednesday","Thursday"], "opens": "19:00", "closes": "23:00" },
+    { "@type": "OpeningHoursSpecification", "dayOfWeek": ["Friday","Saturday"], "opens": "19:00", "closes": "00:00" }
+  ],
+  "acceptsReservations": "True"
+}
+</script>
+</head>
+<body>
+
+<!--
+  NAGORI 名残 — direction contract
+
+  THESIS: the page is a kondate (the kaiseki course card), so the scroll order IS the
+  meal order. Refuses the restaurant template (hero / about / menu grid / gallery / form)
+  and the near-black-plus-neon-accent luxury default.
+  OWN-WORLD: ink ground, ivory type, oxblood used ONLY as a filled hanko seal (twice on
+  the page, never as UI accent), burnt gold only at 1px hairlines. A fixed left spine
+  carries vertical-rl Japanese running heads and scroll progress. Shippori Mincho B1
+  (Japanese mincho; the culture sits in the letterform) against Jost (Futura lineage →
+  paulista concrete poetry). 12-col grid, ~7rem margins, content deliberately off-axis.
+  STORY: a twelve-seat omakase counter in São Paulo — Japanese technique, Brazilian
+  fish and citrus — proven by hands, knife and origin, closed by a reservation.
+  FIRST VIEWPORT: full-bleed nigiri on black pushed to the right third; headline in the
+  photograph's own negative space at left; 名残 riding the spine; WebGL haze over all.
+  FORM: brief-pinned direction (client's 27-section spec + chosen name). Roll skipped per
+  new-work — "a user- or brief-pinned direction beats the roll, always."
+  FINISH: unreviewed and undocumented is unfinished; this build ends with the finish
+  review, the verdict, and DESIGN.md
+-->
+
+<a class="skip" href="#conteudo">Pular para o conteúdo</a>
+
+<!-- the house seal: one definition, pressed in three places -->
+<svg class="seal-def" aria-hidden="true" focusable="false" width="0" height="0">
+  <defs>
+    <filter id="seal-ink" x="-12%" y="-12%" width="124%" height="124%">
+      <feTurbulence type="fractalNoise" baseFrequency="0.82" numOctaves="3" seed="7" result="n"/>
+      <feDisplacementMap in="SourceGraphic" in2="n" scale="2.6" xChannelSelector="R" yChannelSelector="G"/>
+    </filter>
+  </defs>
+  <symbol id="seal-mark" viewBox="0 0 100 100">
+    <g filter="url(#seal-ink)">
+      <rect x="3" y="3" width="94" height="94" rx="5" fill="#8C1D18"/>
+      <text x="50" y="44" text-anchor="middle" font-size="33" fill="#F1E9DC" font-family="'Shippori Mincho B1',serif">名</text>
+      <text x="50" y="84" text-anchor="middle" font-size="33" fill="#F1E9DC" font-family="'Shippori Mincho B1',serif">残</text>
+    </g>
+  </symbol>
+</svg>
+
+<!-- ============ SPINE ============ -->
+<div class="spine" aria-hidden="true">
+  <div class="spine__rule"><span class="spine__fill"></span></div>
+  <div class="spine__label"><span data-spine-label>名残</span></div>
+</div>
+
+<!-- ============ HEADER ============ -->
+<header class="head" data-head>
+  <div class="head__bar">
+    <a class="mark" href="#top" aria-label="Nagori — início">
+      <span class="mark__latin">NAGORI</span>
+      <span class="mark__jp" aria-hidden="true">名残</span>
+    </a>
+
+    <nav class="nav" aria-label="Navegação principal">
+      <a href="#omakase">Omakase</a>
+      <a href="#menu">Menu</a>
+      <a href="#origem">Origem</a>
+      <a href="#chef">Chef</a>
+      <a href="#salao">Salão</a>
+    </nav>
+
+    <a class="btn btn--ghost head__cta" href="#reservas">Reservar mesa</a>
+
+    <button class="burger" type="button" data-burger aria-expanded="false" aria-controls="menu-mobile">
+      <span class="burger__lines" aria-hidden="true"><i></i><i></i></span>
+      <span class="u-sr">Abrir menu</span>
+    </button>
+  </div>
+</header>
+
+<!-- ============ MOBILE MENU ============ -->
+<div class="drawer" id="menu-mobile" data-drawer hidden>
+  <nav class="drawer__nav" aria-label="Navegação">
+    <a href="#manifesto"><em>01</em> Manifesto</a>
+    <a href="#omakase"><em>02</em> Omakase</a>
+    <a href="#pratos"><em>03</em> Pratos</a>
+    <a href="#origem"><em>04</em> Origem</a>
+    <a href="#chef"><em>05</em> Chef</a>
+    <a href="#salao"><em>06</em> Salão</a>
+    <a href="#menu"><em>07</em> Menu</a>
+    <a href="#reservas"><em>08</em> Reservas</a>
+  </nav>
+  <div class="drawer__foot">
+    <p>R. Padre João Manuel, 900<br>Jardins, São Paulo</p>
+    <a class="btn btn--solid" href="#reservas">Reservar mesa</a>
+  </div>
+</div>
+
+<main id="conteudo">
+
+<!-- ============ 01 HERO ============ -->
+<section class="hero" id="top" data-section="名残">
+  <div class="hero__media" data-parallax="50">
+    <picture>
+      <source media="(max-width: 767px)"
+              srcset="assets/img/hero-portrait-500.webp 500w, assets/img/hero-portrait-900.webp 900w"
+              sizes="100vw">
+      <img src="assets/img/hero-2400.webp"
+           srcset="assets/img/hero-800.webp 800w, assets/img/hero-1400.webp 1400w, assets/img/hero-2400.webp 2400w"
+           sizes="100vw"
+           alt="Uma peça de nigiri de salmão suspensa por hashis de madeira contra fundo preto."
+           fetchpriority="high" decoding="async">
+    </picture>
+    <canvas class="hero__haze" data-haze aria-hidden="true"></canvas>
+  </div>
+  <span class="hero__scrim" aria-hidden="true"></span>
+
+  <div class="hero__grid">
+    <div class="hero__type">
+      <h1 class="hero__title">
+        <span class="line"><span>O sabor</span></span>
+        <span class="line"><span>que fica</span></span>
+        <span class="line"><span>depois.</span></span>
+      </h1>
+
+      <p class="hero__gloss" data-reveal>
+        <b>名残</b> <i>nagori</i> — no calendário da cozinha japonesa, o fim da estação:
+        o último e mais concentrado sabor de um ingrediente antes de ele desaparecer do ano.
+      </p>
+
+      <p class="hero__lede" data-reveal>
+        Balcão de doze lugares em São Paulo. Técnica japonesa, pescados e cítricos
+        brasileiros, uma sequência por noite.
+      </p>
+
+      <div class="hero__actions" data-reveal>
+        <a class="btn btn--solid" href="#reservas">Reservar experiência</a>
+        <a class="link" href="#menu">Conhecer o menu</a>
+      </div>
+    </div>
+
+    <p class="hero__meta" data-reveal>
+      Japanese Dining<br>
+      São Paulo — Brasil<br>
+      <span>Doze lugares, uma sessão por noite</span>
+    </p>
+
+    <a class="cue" href="#manifesto" aria-label="Rolar para o conteúdo">
+      <span class="cue__text">Role</span>
+      <span class="cue__line" aria-hidden="true"></span>
+    </a>
+  </div>
+</section>
+
+<!-- ============ 02 MANIFESTO ============ -->
+<section class="sec manifesto" id="manifesto" data-section="細部">
+  <div class="manifesto__grid">
+    <h2 class="h-display manifesto__title" data-reveal>Cada detalhe<br>importa.</h2>
+
+    <div class="manifesto__body">
+      <p data-reveal>
+        Um balcão de doze lugares e uma sequência por noite. A cozinha começa às cinco da
+        tarde, quando o peixe chega, e termina quando a última peça é servida. Nunca antes.
+      </p>
+      <p data-reveal>
+        A técnica é japonesa e não se negocia: arroz temperado com vinagre envelhecido,
+        corte contra a fibra, o intervalo exato entre a mão do chef e a sua. O que muda é a
+        origem. O robalo vem de Ubatuba, o limão vem de Cravinhos, a pimenta vem do Pará.
+      </p>
+      <p data-reveal>
+        Nada aqui é decorativo. Se um elemento não muda o sabor, ele não entra no prato.
+      </p>
+    </div>
+
+    <figure class="ma" data-reveal>
+      <span class="ma__char" aria-hidden="true">間</span>
+      <figcaption>
+        <b>MA</b>
+        <span class="ma__note">O espaço entre as coisas. Em japonês, a pausa também é parte da música.</span>
+      </figcaption>
+    </figure>
+  </div>
+</section>
+
+<!-- ============ 03 OMAKASE ============ -->
+<section class="sec omakase" id="omakase" data-section="お任せ">
+  <div class="omakase__media" data-reveal-img data-parallax="28">
+    <img src="assets/img/omakase-1800.webp"
+         srcset="assets/img/omakase-600.webp 600w, assets/img/omakase-1000.webp 1000w, assets/img/omakase-1800.webp 1800w"
+         sizes="(min-width: 1024px) 52vw, 100vw"
+         alt="Mão do chef pincelando tare sobre uma peça de nigiri apoiada na palma."
+         loading="lazy" decoding="async">
+  </div>
+
+  <div class="omakase__type">
+    <h2 class="h-display" data-reveal>Omakase</h2>
+    <p class="h-sub" data-reveal>Confie no chef.</p>
+
+    <p class="lede" data-reveal>
+      Você não escolhe. Nós escolhemos por você, todas as noites, a partir do que chegou do
+      mar naquela manhã. A sequência muda; a exigência, não. Cada peça é entregue direto na
+      sua frente, no segundo em que está pronta. E é para ser comida nesse segundo.
+    </p>
+
+    <dl class="specs" data-reveal>
+      <div><dt>Tempos</dt><dd>Doze</dd></div>
+      <div><dt>Ingredientes</dt><dd>Da estação, definidos no dia</dd></div>
+      <div><dt>Duração</dt><dd>Cerca de 90 minutos</dd></div>
+      <div><dt>Lugares</dt><dd>Doze, apenas no balcão</dd></div>
+    </dl>
+
+    <p class="price" data-reveal><b>R$ 490</b> <span>por pessoa</span></p>
+
+    <div class="omakase__actions" data-reveal>
+      <a class="btn btn--solid" href="#reservas">Reservar omakase</a>
+      <a class="link" href="#menu">Ver a sequência</a>
+    </div>
+
+    <figure class="ma ma--tate" data-reveal>
+      <span class="ma__char" aria-hidden="true">一期一会</span>
+      <figcaption>
+        <b>Ichigo ichie</b>
+        <span class="ma__note">Um encontro, uma única vez. Nenhuma sequência se repete. Nem para você, nem para nós.</span>
+      </figcaption>
+    </figure>
+  </div>
+</section>
+
+<!-- ============ 04 PRATOS ============ -->
+<section class="sec pratos" id="pratos" data-section="一品">
+  <header class="sec__head">
+    <h2 class="h-display" data-reveal>À la carte,<br>quando o balcão permite.</h2>
+    <p class="lede" data-reveal>
+      Fora da sequência, oito peças ficam disponíveis para quem senta nas mesas do salão.
+      Estas são as quatro que nunca saem.
+    </p>
+  </header>
+
+  <article class="dish dish--a">
+    <div class="dish__media" data-reveal-img>
+      <img src="assets/img/akami-1400.webp" srcset="assets/img/akami-800.webp 800w, assets/img/akami-1400.webp 1400w"
+           sizes="(min-width: 1024px) 46vw, 100vw"
+           alt="Cortes de peixe alinhados sobre tábua de madeira clara no balcão de preparo."
+           loading="lazy" decoding="async">
+    </div>
+    <div class="dish__type">
+      <h3 data-reveal>Akami</h3>
+      <p class="dish__jp" data-reveal aria-hidden="true">赤身</p>
+      <p class="dish__desc" data-reveal>Atum bluefin, shoyu envelhecido em cedro e wasabi ralado na hora, sobre arroz ainda morno.</p>
+      <p class="dish__price" data-reveal>R$ 42</p>
+    </div>
+  </article>
+
+  <article class="dish dish--b">
+    <div class="dish__media" data-reveal-img>
+      <img src="assets/img/salmao-1400.webp" srcset="assets/img/salmao-800.webp 800w, assets/img/salmao-1400.webp 1400w"
+           sizes="(min-width: 1024px) 42vw, 100vw"
+           alt="Fatia de salmão erguida por uma pinça de cozinha, iluminada contra o preto."
+           loading="lazy" decoding="async">
+    </div>
+    <div class="dish__type">
+      <h3 data-reveal>Salmão trufado</h3>
+      <p class="dish__jp" data-reveal aria-hidden="true">鮭</p>
+      <p class="dish__desc" data-reveal>Salmão maturado quatro dias, ponzu de limão-cravo, azeite de trufas e flor de sal.</p>
+      <p class="dish__price" data-reveal>R$ 38</p>
+    </div>
+  </article>
+
+  <article class="dish dish--c">
+    <div class="dish__media" data-reveal-img>
+      <img src="assets/img/vieira-1400.webp" srcset="assets/img/vieira-800.webp 800w, assets/img/vieira-1400.webp 1400w"
+           sizes="(min-width: 1024px) 46vw, 100vw"
+           alt="Vieiras seladas com brotos e molho escuro sobre prato de cerâmica preta."
+           loading="lazy" decoding="async">
+    </div>
+    <div class="dish__type">
+      <h3 data-reveal>Vieira</h3>
+      <p class="dish__jp" data-reveal aria-hidden="true">帆立</p>
+      <p class="dish__desc" data-reveal>Vieira selada no ferro, yuzu kosho e óleo de cebolinha queimada.</p>
+      <p class="dish__price" data-reveal>R$ 46</p>
+    </div>
+  </article>
+
+  <article class="dish dish--d">
+    <div class="dish__media" data-reveal-img>
+      <img src="assets/img/wagyu-1400.webp" srcset="assets/img/wagyu-800.webp 800w, assets/img/wagyu-1400.webp 1400w"
+           sizes="(min-width: 1024px) 42vw, 100vw"
+           alt="Macro do marmoreio de uma peça de wagyu crua."
+           loading="lazy" decoding="async">
+    </div>
+    <div class="dish__type">
+      <h3 data-reveal>Wagyu nigiri</h3>
+      <p class="dish__jp" data-reveal aria-hidden="true">和牛</p>
+      <p class="dish__desc" data-reveal>Wagyu A5 tocado pela brasa, tare de tucupi negro reduzido e flor de sal.</p>
+      <p class="dish__price" data-reveal>R$ 58</p>
+    </div>
+  </article>
+</section>
+
+<!-- ============ 05 ORIGEM ============ -->
+<section class="sec origem" id="origem" data-section="産地">
+  <header class="origem__head">
+    <h2 class="h-display" data-reveal>Japão na técnica.<br>Brasil na essência.</h2>
+    <p class="lede" data-reveal>
+      Não fazemos fusão. Fazemos cozinha japonesa com o que este país tem de melhor. E o que
+      este país tem de melhor raramente precisa atravessar o oceano.
+    </p>
+  </header>
+
+  <div class="origem__grid">
+    <article class="orig" data-reveal-img>
+      <figure><img src="assets/img/limao-1200.webp" srcset="assets/img/limao-700.webp 700w, assets/img/limao-1200.webp 1200w"
+                   sizes="(min-width: 900px) 30vw, 100vw"
+                   alt="Limões-cravo verdes empilhados sobre superfície escura." loading="lazy" decoding="async"></figure>
+      <h3>Limão-cravo</h3>
+      <p class="orig__place">Cravinhos, interior de São Paulo</p>
+      <p>Onde o yuzu não chega, o limão-cravo responde: mesma acidez alta, aroma mais quente e mais doce. Base de todos os nossos ponzus.</p>
+    </article>
+
+    <article class="orig" data-reveal-img>
+      <figure><img src="assets/img/pimenta-1200.webp" srcset="assets/img/pimenta-700.webp 700w, assets/img/pimenta-1200.webp 1200w"
+                   sizes="(min-width: 900px) 30vw, 100vw"
+                   alt="Uma pimenta vermelha suspensa contra fundo totalmente preto." loading="lazy" decoding="async"></figure>
+      <h3>Pimenta-de-cheiro</h3>
+      <p class="orig__place">Baixo Tocantins, Pará</p>
+      <p>Aroma sem ardência. Três gotas do seu óleo no nigiri de vieira: ninguém identifica, todos percebem.</p>
+    </article>
+
+    <article class="orig" data-reveal-img>
+      <figure><img src="assets/img/concha-1200.webp" srcset="assets/img/concha-700.webp 700w, assets/img/concha-1200.webp 1200w"
+                   sizes="(min-width: 900px) 30vw, 100vw"
+                   alt="Concha de molusco fotografada em close contra fundo escuro." loading="lazy" decoding="async"></figure>
+      <h3>Pescado nacional</h3>
+      <p class="orig__place">Litoral norte paulista</p>
+      <p>Olho-de-boi, robalo e vermelho chegam de Ubatuba na mesma manhã. O que não estiver no ponto simplesmente não é servido naquela noite.</p>
+    </article>
+  </div>
+
+  <p class="origem__close" data-reveal>A fusão não aparece no prato. Aparece na origem.</p>
+</section>
+
+<!-- ============ 06 CHEF ============ -->
+<section class="sec chef" id="chef" data-section="板前">
+  <div class="chef__media" data-reveal-img data-parallax="28">
+    <img src="assets/img/chef-1800.webp"
+         srcset="assets/img/chef-600.webp 600w, assets/img/chef-1000.webp 1000w, assets/img/chef-1800.webp 1800w"
+         sizes="(min-width: 1024px) 48vw, 100vw"
+         alt="Chef de uniforme branco trabalhando sozinho atrás do balcão, sob luz baixa."
+         loading="lazy" decoding="async">
+  </div>
+
+  <div class="chef__type">
+    <h2 class="h-display" data-reveal>Precisão construída<br>ao longo de uma vida.</h2>
+
+    <p class="chef__name" data-reveal>Haruo Sena<span>, chef e proprietário</span></p>
+
+    <p data-reveal>
+      Nasceu em Registro, no interior de São Paulo, onde a primeira colônia japonesa do
+      Brasil se instalou em 1913. Cresceu vendo o avô limpar peixe no quintal e achando
+      aquilo comum.
+    </p>
+    <p data-reveal>
+      Aos dezenove foi para Tóquio. Passou três anos carregando caixas em Tsukiji antes de
+      encostar em uma faca, e mais oito atrás de um balcão de oito lugares em Nihonbashi,
+      onde aprendeu que a diferença entre bom e memorável cabe em dois graus de temperatura.
+    </p>
+    <p data-reveal>
+      Voltou em 2019 com uma ideia simples e difícil: fazer aquela cozinha aqui, com o que
+      existe aqui. O Nagori abriu no ano seguinte, com doze lugares e nenhum cardápio fixo.
+    </p>
+
+    <blockquote class="chef__quote" data-reveal>
+      “Em Tóquio eu aprendi a repetir. Em São Paulo eu aprendi o que valia a pena repetir.”
+    </blockquote>
+  </div>
+</section>
+
+<!-- ============ 07 SALÃO ============ -->
+<section class="sec salao" id="salao" data-section="空間">
+  <header class="salao__head">
+    <h2 class="h-display" data-reveal>Uma pausa no<br>ritmo da cidade.</h2>
+    <p class="lede" data-reveal>
+      Doze lugares, luz baixa, nenhuma música alta. O balcão é de cedro maciço, cortado em
+      peça única, e envelhece um pouco a cada noite. Do lado de dentro, a cidade some.
+    </p>
+  </header>
+
+  <div class="salao__grid">
+    <figure class="salao__a" data-reveal-img data-parallax="24">
+      <img src="assets/img/salao-1800.webp"
+           srcset="assets/img/salao-600.webp 600w, assets/img/salao-1000.webp 1000w, assets/img/salao-1800.webp 1800w"
+           sizes="(min-width: 900px) 62vw, 100vw"
+           alt="Salão escuro com fileira de luminárias de papel iluminando o balcão de madeira."
+           loading="lazy" decoding="async">
+    </figure>
+    <figure class="salao__b" data-reveal-img>
+      <img src="assets/img/madeira-1600.webp" srcset="assets/img/madeira-900.webp 900w, assets/img/madeira-1600.webp 1600w"
+           sizes="(min-width: 900px) 30vw, 50vw"
+           alt="Textura de madeira escura queimada no acabamento yakisugi." loading="lazy" decoding="async">
+    </figure>
+    <figure class="salao__c" data-reveal-img>
+      <img src="assets/img/ma-1400.webp" srcset="assets/img/ma-800.webp 800w, assets/img/ma-1400.webp 1400w"
+           sizes="(min-width: 900px) 30vw, 50vw"
+           alt="Xícara de cerâmica pintada à mão apoiada em bandeja de madeira." loading="lazy" decoding="async">
+    </figure>
+    <figure class="salao__d" data-reveal-img>
+      <img src="assets/img/faca-1600.webp" srcset="assets/img/faca-900.webp 900w, assets/img/faca-1600.webp 1600w"
+           sizes="(min-width: 900px) 36vw, 100vw"
+           alt="Faca japonesa yanagiba de lâmina longa sobre superfície preta." loading="lazy" decoding="async">
+    </figure>
+  </div>
+</section>
+
+<!-- ============ 08 MENU ============ -->
+<section class="sec menu" id="menu" data-section="献立">
+  <header class="menu__head">
+    <h2 class="h-display" data-reveal>Menu degustação</h2>
+    <p class="lede" data-reveal>
+      Doze tempos, seis momentos. Os nomes se repetem toda noite; o conteúdo, nunca.
+    </p>
+  </header>
+
+  <ol class="courses">
+    <li data-reveal>
+      <span class="courses__n">01</span>
+      <span class="courses__name">Sakizuke <i aria-hidden="true">先付</i></span>
+      <span class="courses__desc">Entrada da estação, servida fria, para acertar o paladar.</span>
+    </li>
+    <li data-reveal>
+      <span class="courses__n">02</span>
+      <span class="courses__name">Sashimi <i aria-hidden="true">刺身</i></span>
+      <span class="courses__desc">Seleção do dia, três cortes, sem molho até o segundo.</span>
+    </li>
+    <li data-reveal>
+      <span class="courses__n">03</span>
+      <span class="courses__name">Nigiri <i aria-hidden="true">握り</i></span>
+      <span class="courses__desc">Sequência de oito peças, do peixe branco ao mais gordo.</span>
+    </li>
+    <li data-reveal>
+      <span class="courses__n">04</span>
+      <span class="courses__name">Yakimono <i aria-hidden="true">焼物</i></span>
+      <span class="courses__desc">Preparo no carvão binchotan, o único momento quente da noite.</span>
+    </li>
+    <li data-reveal>
+      <span class="courses__n">05</span>
+      <span class="courses__name">Signature <i aria-hidden="true">一品</i></span>
+      <span class="courses__desc">Criação autoral do chef, redesenhada a cada estação.</span>
+    </li>
+    <li data-reveal>
+      <span class="courses__n">06</span>
+      <span class="courses__name">Kanmi <i aria-hidden="true">甘味</i></span>
+      <span class="courses__desc">Sobremesa de fruta brasileira. No verão, sorvete de cambuci.</span>
+    </li>
+  </ol>
+
+  <div class="menu__foot">
+    <figure class="menu__img" data-reveal-img>
+      <img src="assets/img/degustacao-1400.webp" srcset="assets/img/degustacao-800.webp 800w, assets/img/degustacao-1400.webp 1400w"
+           sizes="(min-width: 900px) 40vw, 100vw"
+           alt="Prato minimalista branco com ervas, isolado por um facho de luz sobre louça escura."
+           loading="lazy" decoding="async">
+    </figure>
+    <div class="menu__note" data-reveal>
+      <p>
+        A sequência muda conforme o mar e a estação; em algumas noites, conforme uma única
+        caixa que chegou boa demais para ser dividida.
+      </p>
+      <p>
+        Restrições alimentares e alergias devem ser informadas com 24 horas de antecedência.
+        Harmonização de saquês por mais R$ 280.
+      </p>
+      <a class="link" href="#reservas">Reservar o menu completo</a>
+    </div>
+  </div>
+</section>
+
+<!-- ============ 09 DEPOIMENTO ============ -->
+<section class="sec quote" data-section="声">
+  <span class="seal seal--quote" data-stamp aria-hidden="true"><svg viewBox="0 0 100 100"><use href="#seal-mark"/></svg></span>
+  <blockquote data-reveal>
+    <p>Uma experiência construída nos pequenos detalhes — da primeira peça de nigiri ao último gole de saquê.</p>
+    <footer>Marina Prado<span>, editora de gastronomia</span></footer>
+  </blockquote>
+</section>
+
+<!-- ============ 10 RESERVAS ============ -->
+<section class="sec reservas" id="reservas" data-section="予約">
+  <div class="reservas__type">
+    <h2 class="h-display" data-reveal>Sua experiência<br>começa aqui.</h2>
+    <p class="lede" data-reveal>
+      Reservamos por sessão. Escolha a noite e o número de lugares; confirmamos por telefone
+      em até duas horas.
+    </p>
+
+    <form class="form" data-form novalidate>
+      <div class="field">
+        <label for="data">Data</label>
+        <input type="date" id="data" name="data" required>
+        <p class="field__err" data-err-for="data" hidden>Escolha uma data a partir de hoje.</p>
+      </div>
+
+      <div class="field">
+        <label for="hora">Horário</label>
+        <select id="hora" name="hora" required>
+          <option value="" selected disabled>Selecione</option>
+          <option>19:00</option>
+          <option>19:30</option>
+          <option>20:00</option>
+          <option>21:30</option>
+          <option>22:00</option>
+        </select>
+        <p class="field__err" data-err-for="hora" hidden>Escolha um horário.</p>
+      </div>
+
+      <div class="field">
+        <label for="pessoas">Pessoas</label>
+        <select id="pessoas" name="pessoas" required>
+          <option value="" selected disabled>Selecione</option>
+          <option>1 pessoa</option>
+          <option>2 pessoas</option>
+          <option>3 pessoas</option>
+          <option>4 pessoas</option>
+          <option>5 ou mais</option>
+        </select>
+        <p class="field__err" data-err-for="pessoas" hidden>Informe quantas pessoas.</p>
+      </div>
+
+      <button class="btn btn--solid form__submit" type="submit">Reservar mesa</button>
+      <p class="form__note">O balcão tem doze lugares. Grupos acima de quatro pessoas ficam no salão.</p>
+    </form>
+
+    <div class="done" data-done hidden role="status">
+      <span class="seal" aria-hidden="true"><svg viewBox="0 0 100 100"><use href="#seal-mark"/></svg></span>
+      <h3>Pedido registrado.</h3>
+      <p data-done-summary></p>
+      <p class="done__note">Nossa equipe confirma por telefone em até duas horas. Se preferir, ligue para (11) 3062-0000.</p>
+      <button class="link" type="button" data-reset>Fazer outra reserva</button>
+    </div>
+  </div>
+
+  <aside class="reservas__info">
+    <div class="info">
+      <h3>Horários</h3>
+      <p><b>Terça — Quinta</b><br>19h às 23h</p>
+      <p><b>Sexta — Sábado</b><br>19h à meia-noite</p>
+      <p class="info__muted">Domingo e segunda, fechado.</p>
+    </div>
+
+    <div class="info">
+      <h3>Onde</h3>
+      <p>R. Padre João Manuel, 900<br>Jardins, São Paulo, SP</p>
+      <p class="info__muted">Manobrista na porta. Estação Consolação a 900 m.</p>
+    </div>
+
+    <div class="info">
+      <h3>Contato</h3>
+      <p><a class="link" href="tel:+551130620000">(11) 3062-0000</a></p>
+      <p><a class="link" href="mailto:reservas@nagori.com.br">reservas@nagori.com.br</a></p>
+    </div>
+  </aside>
+</section>
+
+</main>
+
+<!-- ============ FOOTER ============ -->
+<footer class="foot" data-section="名残">
+  <div class="foot__top">
+    <div class="foot__brand">
+      <span class="seal seal--foot" aria-hidden="true"><svg viewBox="0 0 100 100"><use href="#seal-mark"/></svg></span>
+      <span class="foot__mark">NAGORI</span>
+      <p>Japanese Contemporary Dining<br>São Paulo — Brasil</p>
+    </div>
+
+    <nav class="foot__nav" aria-label="Rodapé">
+      <a class="link" href="https://instagram.com" rel="noopener">Instagram</a>
+      <a class="link" href="#reservas">Reservas</a>
+      <a class="link" href="mailto:reservas@nagori.com.br">Contato</a>
+      <a class="link" href="#salao">Como chegar</a>
+    </nav>
+
+    <p class="foot__hours">
+      Terça — Quinta, 19h às 23h<br>
+      Sexta — Sábado, 19h à meia-noite
+    </p>
+  </div>
+
+  <div class="foot__bottom">
+    <p>© 2026 Nagori. Todos os direitos reservados.</p>
+    <p class="foot__disclaimer">Projeto fictício, criado como peça de portfólio. Restaurante, marca, chef e depoimento não existem.</p>
+  </div>
+</footer>
+
+<script src="assets/js/nagori.js" defer></script>
+</body>
+</html>
